@@ -1,0 +1,27 @@
+{
+  "family": "lstm",
+  "embedding": "word2vec_100",
+  "config": {
+    "name": "h128_softmax",
+    "hidden_size": 128,
+    "output_activation": "softmax"
+  },
+  "seed": 42,
+  "dropout": 0.2,
+  "trainable_embeddings": false,
+  "learning_rate": 0.001,
+  "batch_size": 128,
+  "epoch_budget": 300,
+  "early_stopping": true,
+  "patience": 25,
+  "best_epoch": 136,
+  "preparation_id": "132d9779bacc6ee04f0dfd266ba0cdc0043a1240f6981121820481bf7c253a56",
+  "word2vec_source": "google_news_pca",
+  "selection_metric": "validation macro F1; ties: lower validation loss",
+  "device": "mps",
+  "versions": {
+    "python": "3.12.15",
+    "torch": "2.14.1",
+    "numpy": "2.5.4"
+  }
+}

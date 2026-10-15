@@ -1,0 +1,61 @@
+{
+  "seed": 42,
+  "class_names": [
+    "neutral/positive",
+    "negative attitude",
+    "derogatory"
+  ],
+  "max_length": 42,
+  "vocab_size": 7779,
+  "word2vec_source": "google_news_pca",
+  "embedding_sources": {
+    "word2vec_50": "Google News 300d -> training-vocabulary PCA",
+    "word2vec_100": "Google News 300d -> training-vocabulary PCA",
+    "glove_50": "GloVe Wikipedia 2014 + Gigaword 5 (6B)",
+    "glove_100": "GloVe Wikipedia 2014 + Gigaword 5 (6B)"
+  },
+  "csv_sha256": {
+    "train": "4046a55208eac629c82ef2dc94ca25e91fde422197fe10110e00f1ac76e85c4a",
+    "validation": "238fe7c87715a996ede2017edf8207000aa63253cf58aafe71b03f2134f59c49",
+    "test": "1fee49bd572ff33c878d8f52f26292ea7fb5ccc70e7c3e499a58f592de2d2b39"
+  },
+  "tokenization": "lowercase; words, contractions, digits, punctuation",
+  "split_sizes": {
+    "train": 21120,
+    "validation": 5280,
+    "test": 6600
+  },
+  "audit": [
+    {
+      "check": "train: repeated normalized messages",
+      "count": 5
+    },
+    {
+      "check": "validation: repeated normalized messages",
+      "count": 2
+    },
+    {
+      "check": "test: repeated normalized messages",
+      "count": 0
+    },
+    {
+      "check": "normalized text overlap: train / validation",
+      "count": 2
+    },
+    {
+      "check": "normalized text overlap: train / test",
+      "count": 4
+    },
+    {
+      "check": "normalized text overlap: validation / test",
+      "count": 0
+    }
+  ],
+  "versions": {
+    "python": "3.12.15",
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "gensim": "4.4.0"
+  },
+  "preparation_id": "132d9779bacc6ee04f0dfd266ba0cdc0043a1240f6981121820481bf7c253a56"
+}

@@ -1,0 +1,14 @@
+# Shared dependencies for all four notebooks and demo.py.
+# Python 3.10 or newer.
+
+numpy>=1.26,<3
+pandas>=2.2,<4
+scikit-learn>=1.4,<2
+matplotlib>=3.9,<4
+torch>=2.2,<3
+gensim>=4.4,<5
+certifi>=2024.2
+
+# Open and run the notebooks.
+notebook>=7,<8
+ipykernel>=6,<7

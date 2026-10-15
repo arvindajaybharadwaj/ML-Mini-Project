@@ -1,0 +1,33 @@
+{
+  "family": "feedforward",
+  "embedding": "word2vec_100",
+  "config": {
+    "name": "relu_relu",
+    "hidden_sizes": [
+      64,
+      32
+    ],
+    "activations": [
+      "relu",
+      "relu"
+    ]
+  },
+  "seed": 42,
+  "dropout": 0.2,
+  "trainable_embeddings": false,
+  "learning_rate": 0.001,
+  "batch_size": 128,
+  "epoch_budget": 550,
+  "early_stopping": true,
+  "patience": 25,
+  "best_epoch": 41,
+  "preparation_id": "132d9779bacc6ee04f0dfd266ba0cdc0043a1240f6981121820481bf7c253a56",
+  "word2vec_source": "google_news_pca",
+  "selection_metric": "validation macro F1; ties: lower validation loss",
+  "device": "mps",
+  "versions": {
+    "python": "3.12.15",
+    "torch": "2.14.1",
+    "numpy": "2.5.4"
+  }
+}
