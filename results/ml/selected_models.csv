@@ -1,0 +1,5 @@
+family,model
+SVM,SVM linear (binary)
+Naive Bayes,Naive Bayes baseline (word list)
+KNN,KNN K=6
+Random Forest,Random Forest (Gini)

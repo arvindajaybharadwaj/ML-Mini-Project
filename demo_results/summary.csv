@@ -1,0 +1,7 @@
+Model,Accuracy,Macro P,Macro R,Macro F1
+Feedforward,93.15,93.14,93.15,93.15
+LSTM,96.61,96.61,96.61,96.61
+SVM (binary),98.85,98.48,98.95,98.71
+Naive Bayes,92.38,92.84,92.38,92.34
+KNN,79.44,79.77,79.44,79.17
+Random Forest,94.39,94.42,94.39,94.35
