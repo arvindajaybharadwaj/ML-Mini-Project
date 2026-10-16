@@ -1,4 +1,7 @@
-# PvP Game Chat Classification
+# Classifying Sentiment in the Language of PvP Game Communications
+
+1. **Name:** Arvind Ajay Bharadwaj, **SRN:** PES1UG24AM052
+2. **Name:** Amogh B Shetty, **SRN:** PES1UG24AM034
 
 Classify game chat messages using six trained models: a Feedforward Neural Network, LSTM, SVM, Naive Bayes, KNN, and Random Forest.
 
