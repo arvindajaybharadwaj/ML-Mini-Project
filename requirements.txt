@@ -1,9 +1,10 @@
-# Shared dependencies for all four notebooks and demo.py.
-# Python 3.10 or newer.
+# Shared dependencies for all notebooks and the combined demo.
+# Tested with Python 3.12.
 
 numpy>=1.26,<3
 pandas>=2.2,<4
-scikit-learn>=1.4,<2
+scikit-learn==1.9.0
+joblib>=1.5,<2
 matplotlib>=3.9,<4
 torch>=2.2,<3
 gensim>=4.4,<5
